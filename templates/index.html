@@ -1,0 +1,13 @@
+<main class="library-grid">
+    {% for library in libraries %}
+    <a href="{{ url_for('library_detail', library_id=library.id) }}" class="library-card">
+        <div class="thumbnail-container">
+            <img src="{{ url_for('static', filename=library.image) }}" alt="Sight of {{ library.name }}">
+        </div>
+        <div class="card-content">
+            <h2>{{ library.name }}</h2>
+            <p class="location">{{ library.location }}</p>
+        </div>
+    </a>
+    {% endfor %}
+</main>
