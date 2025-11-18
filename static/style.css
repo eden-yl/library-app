@@ -1,10 +1,77 @@
-:root {
+/* :root {
     --bg-color: #f7f7f7;
     --text-color: #37352f;
     --card-bg: #ffffff;
     --shadow: 0 1px 3px rgba(15, 15, 15, 0.1);
     --border-radius: 6px;
+} */
+/* --- Global Variables (Keep these) --- */
+:root {
+    --bg-color: #ffffff; /* Change background to pure white for crispness */
+    --text-color: #37352f;
+    --card-bg: #f7f7f7; /* Cards will be slightly off-white, not pure white */
+    --shadow: none; /* NO box-shadow for the simple look */
+    --border: 1px solid #e0e0e0; /* Subtle border for definition */
+    --border-radius: 4px; /* Slightly reduced corner radius */
 }
+/* (Keep the body and container styles as they are) */
+
+/* --- New Notion-Specific Title Styles --- */
+.page-title {
+    font-weight: 700;
+    font-size: 3em; /* Larger, dominant title */
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.page-subtitle {
+    color: #999;
+    font-size: 1.1em;
+    margin-bottom: 40px; /* Increased whitespace below the header */
+}
+
+/* --- Refined Grid and Card Styling --- */
+.library-grid {
+    display: grid;
+    /* Reduce card size on desktop for more whitespace */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px; /* Increased gap */
+}
+
+.library-card {
+    text-decoration: none;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    /* Instead of a shadow, use a subtle border */
+    border: var(--border); 
+    box-shadow: none; 
+    transition: background-color 0.2s;
+    overflow: hidden;
+}
+
+.library-card:hover {
+    /* Subtle change on hover for interaction feedback */
+    background-color: #ededed; 
+    transform: none; /* Remove the lift/translateY for a flatter look */
+    box-shadow: none;
+}
+
+.thumbnail-container {
+    width: 100%;
+    /* Made thumbnails slightly shorter for a cleaner card */
+    height: 150px; 
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 12px 15px; /* Reduced padding */
+}
+
+.card-content h2 {
+    font-size: 1em; /* Slightly smaller title for simplicity */
+    font-weight: 600;
+}
+
 
 * {
     box-sizing: border-box;
