@@ -24,6 +24,13 @@ LIBRARIES_DATA = [
         "location": "Vienna, Austria",
         "image": "austrian_national.jpg",
         "description": "Features the stunning State Hall with baroque design."
+    },
+        {
+        "id": 4,
+        "name": "Starfield Library",
+        "location": "Seoul, South Korea",
+        "image": "starfield.jpg",
+        "description": "Grand, photogenic design and towering bookshelves, creating an Instagram-worthy atmosphere"
     }
 ]
 
