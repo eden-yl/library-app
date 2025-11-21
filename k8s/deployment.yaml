@@ -1,0 +1,28 @@
+# k8s/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: library-app-deployment
+  labels:
+    app: library-app
+spec:
+  replicas: 3 # Start with 3 copies (pods) for high availability
+  selector:
+    matchLabels:
+      app: library-app
+  template:
+    metadata:
+      labels:
+        app: library-app
+    spec:
+      containers:
+      - name: library-app-container
+        # Use the image you pushed to Docker Hub
+        image: hyunsulee0/library-app:v1 
+        ports:
+        - containerPort: 8000 # The port exposed in the Dockerfile
+        # Set resource requests/limits (optional, but good practice)
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"

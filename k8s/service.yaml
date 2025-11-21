@@ -1,0 +1,13 @@
+# k8s/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: library-app-svc
+spec:
+  # LoadBalancer type exposes the service externally (usually provided by the cloud provider)
+  type: LoadBalancer 
+  selector:
+    app: library-app # Matches the label in the deployment template
+  ports:
+    - port: 80 # The external port K8s exposes
+      targetPort: 8000 # The port the container is listening on (from Dockerfile)
