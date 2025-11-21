@@ -1,6 +1,6 @@
 # 📚 The Grand Tour of Libraries Web Service (Dockerised)
 
-A minimalist web service built with Flask that showcases beautiful libraries worldwide, now containerized using Docker for simplified deployment and environment consistency.
+A minimalist web service built with Flask that showcases beautiful libraries worldwide, now containerised using Docker for simplified deployment and environment consistency.
 
 ## 🔗 Quick Access (Live Deployment)
 
@@ -12,7 +12,7 @@ The service is deployed on Render using the official Docker image:
 
 ## ✨ Features
 
-  * **Containerized:** Packaged with Docker for dependency isolation and seamless portability.
+  * **Containerised:** Packaged with Docker for dependency isolation and seamless portability.
   * **Notion-Like Design:** Clean, distraction-free interface using modern CSS.
   * **Python/Flask Backend:** Lightweight application logic running on **Gunicorn**.
   * **Dynamic Routing:** Each library card links to a specific detail page.
@@ -52,7 +52,7 @@ The service will be available at: **[http://localhost:5000/](https://www.google.
 
 -----
 
-## 🐳 Deployment & Containerization
+## 🐳 Deployment & Containerisation
 
 This service is ready for modern container orchestration platforms (like Render or Kubernetes).
 
