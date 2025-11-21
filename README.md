@@ -1,4 +1,4 @@
-# 📚 The Grand Tour of Libraries Web Service (Dockerized)
+# 📚 The Grand Tour of Libraries Web Service (Dockerised)
 
 A minimalist web service built with Flask that showcases beautiful libraries worldwide, now containerized using Docker for simplified deployment and environment consistency.
 
