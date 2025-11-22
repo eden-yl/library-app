@@ -29,7 +29,7 @@ LIBRARIES_DATA = [
         "id": 4,
         "name": "Starfield Library",
         "location": "Seoul, South Korea",
-        "image": "starfield.jpg",
+        "image": "starfield.png",
         "description": "Grand, photogenic design and towering bookshelves, creating an Instagram-worthy atmosphere"
     }
 ]
